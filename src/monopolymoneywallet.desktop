@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MonopolyMoney Wallet
+Comment=MonopolyMoney wallet
+Exec=monopolymoneywallet %U
+Terminal=false
+Type=Application
+Icon=monopolymoney
+MimeType=x-scheme-handler/monopolymoney;
+Categories=Office;Finance;

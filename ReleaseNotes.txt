@@ -1,0 +1,15 @@
+Release notes 1.0.2
+
+- Fix (as good as possible) handling of paths with non-ASCII characters
+- Replace icon again
+- Remove block explorer for the moment
+- Make splash screen non-topmost to prevent covering error messages
+
+Release notes 1.0.1
+
+- Fix Windows compatibility
+- Replace icon
+
+Release notes 1.0.0
+
+Initial version

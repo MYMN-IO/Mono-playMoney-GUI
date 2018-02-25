@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"*.tag": "htmltag",
+		"unordered_map": "cpp",
+		"vector": "cpp",
+		"xstring": "cpp"
+	}
+}

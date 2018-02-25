@@ -1,0 +1,4 @@
+set(CN_PROJECT_NAME "MonopolyMoney")
+set(CN_CURRENCY_DISPLAY_NAME "MonopolyMoney")
+set(CN_CURRENCY_TICKER "MYM")
+set(CN_VERSION 1.0.0)
