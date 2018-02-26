@@ -1,16 +1,16 @@
 Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers, The Forknote developers  
-Copyright (c) 2017-2018, The MonopolyMoney developers
+Copyright (c) 2017-2018, The Mono-playMoney developers
 
-# MonopolyMoney
+# Mono-playMoney
 ## GUI Wallet
 
 *The crypto game is just getting started.*
 
-This is a GUI wallet for usage with the MonopolyMoney (MYM) cryptocurrency.
+This is a GUI wallet for usage with the Mono-playMoney (MYM) cryptocurrency.
 
 ## Build
 
-You first need to clone the MonopolyMoney coin main repository. Then, create a symlink named `cryptonote` to the repository you just cloned.
+You first need to clone the Mono-playMoney coin main repository. Then, create a symlink named `cryptonote` to the repository you just cloned.
 
 Please see build instructions below:
 
@@ -30,7 +30,7 @@ Alternatively, it may be possible to install them using a package manager.
 To create the symlink to the core directory, use:
 
 ```
-ln -s ../MonopolyMoney-Core cryptonote
+ln -s ../Mono-playMoney-Core cryptonote
 ```
 
 To build, run the following commands in the project's root directory:
@@ -58,7 +58,7 @@ Visual C++ Build Tools v120 (Tested with v140)
 To create the symlink to the core directory, use:
 
 ```
-mklink /D cryptonote ..\MonopolyMoney-Core
+mklink /D cryptonote ..\Mono-playMoney-Core
 ```
 
 To build, run the following commands in the project's root directory, but make sure to substitute the Visual Studio version for the one that you use, and that the `CMAKE_PREFIX_PATH` points to your Qt files, and to replace the VCTargetsPath with one that works for you:
@@ -69,7 +69,26 @@ cd build
 set PATH="c:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x64";%PATH%
 set VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140
 cmake -G "Visual Studio 14 Win64" -DCMAKE_PREFIX_PATH="C:\Qt\5.6\msvc2015_64" -DPORTABLE=1 -DCMAKE_BUILD_TYPE=Release ..
-msbuild MonopolyMoney.sln /m /p:Configuration=Release
+msbuild 
+To create the symlink to the core directory, use:
+
+```
+mklink /D cryptonote ..\Mono-playMoney-Core
+```
+
+To build, run the following commands in the project's root directory, but make sure to substitute the Visual Studio version for the one that you use, and that the `CMAKE_PREFIX_PATH` points to your Qt files, and to replace the VCTargetsPath with one that works for you:
+
+```
+mkdir build
+cd build
+set PATH="c:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x64";%PATH%
+set VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140
+cmake -G "Visual Studio 14 Win64" -DCMAKE_PREFIX_PATH="C:\Qt\5.6\msvc2015_64" -DPORTABLE=1 -DCMAKE_BUILD_TYPE=Release ..
+msbuild Mono-playMone.sln /m /p:Configuration=Release
+
+
+
+
 ```
 
 In your build folder there should now be a new folder named `Release`, with the binaries.
@@ -90,8 +109,26 @@ To compile the debug version, omit the `/p:Configuration=Release` parameter. The
 
 ## Usage Notes
 
-To run the GUI wallet, the MonopolyMoney Core daemon is not required to run. If a daemon already runs, it will be used - otherwise the wallet will use its own "internal daemon" instead. Note that the block explorer only works with the internal daemon.
+To run the GUI wallet, the 
+To create the symlink to the core directory, use:
 
-Note that mining without a mining pool is **not** possible with this wallet. For direct mining, use the `miner` tool from MonopolyMoney Core instead.
+```
+mklink /D cryptonote ..\Mono-playMoney-Core
+```
 
-**Important:** The GUI wallet uses a new format for wallet files. Wallet files created by the GUI wallet cannot be read by the MonopolyMoney Core command-line wallet. Furthermore, when you open a wallet file created by the MonopolyMoney Core command-line wallet in the GUI wallet, it will **automatically convert it** to the new format, and afterwards it will **no longer be readable** by the MonopolyMoney Core command-line wallet! When a wallet file is converted, a backup file (`<name>.wallet.backup`) with the old format is created next to the wallet file. Don't throw away the backup file if you intend to use the command-line wallet in the future.
+To build, run the following commands in the project's root directory, but make sure to substitute the Visual Studio version for the one that you use, and that the `CMAKE_PREFIX_PATH` points to your Qt files, and to replace the VCTargetsPath with one that works for you:
+
+```
+mkdir build
+cd build
+set PATH="c:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x64";%PATH%
+set VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140
+cmake -G "Visual Studio 14 Win64" -DCMAKE_PREFIX_PATH="C:\Qt\5.6\msvc2015_64" -DPORTABLE=1 -DCMAKE_BUILD_TYPE=Release ..
+msbuild Mono-playMone Core daemon is not required to run. If a daemon already runs, it will be used - otherwise the wallet will use its own "internal daemon" instead. Note that the block explorer only works with the internal daemon.
+
+
+
+
+Note that mining without a mining pool is **not** possible with this wallet. For direct mining, use the `miner` tool from Mono-playMoney Core instead.
+
+**Important:** The GUI wallet uses a new format for wallet files. Wallet files created by the GUI wallet cannot be read by the Mono-playMoney Core command-line wallet. Furthermore, when you open a wallet file created by the Mono-playMoney Core command-line wallet in the GUI wallet, it will **automatically convert it** to the new format, and afterwards it will **no longer be readable** by the Mono-playMoney Core command-line wallet! When a wallet file is converted, a backup file (`<name>.wallet.backup`) with the old format is created next to the wallet file. Don't throw away the backup file if you intend to use the command-line wallet in the future.
